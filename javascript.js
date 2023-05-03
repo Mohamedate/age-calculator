@@ -16,6 +16,8 @@ const dayAns = document.querySelector('.day-ans')
 const monthAns = document.querySelector('.month-ans')
 const yearAns = document.querySelector('.year-ans')
 
+
+
 // change color of input field when focus on it 
 const inputs = document.getElementsByTagName('input');
 
@@ -45,20 +47,23 @@ submitButton.addEventListener('click', () => {
         return 
     }
     const nowDate = new Date()
-    const birthday = new Date(`${dayInput.value}-${monthInput.value}-${yearInput.value}`)
+    const birthday = new Date(`${monthInput.value}/${dayInput.value}/${yearInput.value}`)
+
 
 
     const diffInMilliseconds = nowDate - birthday;
+
     const ageInYear = Math.round(diffInMilliseconds / 1000 / 60 / 60 / 24 / 30 / 12) 
     const ageInMonth = Math.round(diffInMilliseconds / 1000 / 60 / 60 / 24 / 30) 
     const ageInDay = Math.round(diffInMilliseconds / 1000 / 60 / 60 / 24)
-  
+    
+
     // set years in final result 
     let startYear = 0
     const intervalId = setInterval(() => { 
         yearAns.innerHTML = startYear
         startYear += 1
-        if (startYear == ageInYear) { 
+        if (startYear >= ageInYear) { 
             clearInterval(intervalId)
         }
     }, 50)
@@ -68,7 +73,7 @@ submitButton.addEventListener('click', () => {
     const intervalId2 = setInterval(() => { 
         monthAns.innerHTML = startMonth
         startMonth += 1
-        if (startMonth == ageInMonth) { 
+        if (startMonth >= ageInMonth) { 
             clearInterval(intervalId2)
         }
     }, 30)
@@ -78,11 +83,10 @@ submitButton.addEventListener('click', () => {
     const intervalId3 = setInterval(() => { 
         dayAns.innerHTML = startDay
         startDay += 1
-        if (startDay == ageInDay) { 
+        if (startDay >= ageInDay) { 
             clearInterval(intervalId3)
         }
-    }, 5)
-
+    }, 4)
 })
 
 
