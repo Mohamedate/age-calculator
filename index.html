@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="all-inputs">
+        <div class="day input">
+          <label for="day">DAY</label>
+          <input  type="number" id="day" placeholder="DD">
+          <div class="error day-error"></div>
+        </div>
+        <div class="month input">
+          <label class = "title-input" for="month">MONTH</label>
+          <input type="number"  id="month" placeholder="MM">
+          <div class = "error month-error"></div>
+        </div>
+        <div class="year input">
+          <label class = "title-input" for="year">YEAR</label>
+          <input type="number" id="year" placeholder="YYYY">
+          <div class = "error year-error"></div>
+        </div>
+      </div>
+      <div class="btn">
+        <img src="./icon-arrow.svg" alt="img" class="image-effect1">
+        <img src="./icon-arrow.svg" alt="img" class="image-effect2">
+        <img src="./icon-arrow.svg" alt="img" class="image-effect3">
+      </div>
+
+      <div class="ans">
+        <div>
+          <div class="year-ans">
+            - -
+          </div>
+          years
+        </div>
+        <div>
+          <div class="month-ans">
+            - -
+          </div>
+          months
+        </div>
+        <div>
+          <div class="day-ans">
+            - -  
+          </div>
+          days
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./javascript.js"></script>
+  <footer class="footer"><a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+  | <a class="coder" href="https://mohamedate.github.io/Mohamed_Atef/" target="_blank">Mohamed Atef</a>
+  </footer>
+</body>
+</html>
