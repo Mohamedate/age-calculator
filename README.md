@@ -1,14 +1,14 @@
 
 # Frontend Mentor - age claculator component solution
 
-### my solution
+### My Final Solution
 
-<img src = "./images/photo.jpeg" />
+<img src = "./calc-age.jpeg" />
 
 ### Links
 
-- Solution URL:[Click Here](https://github.com/Mohamedate/ntf_card_challenge)
-- Live Site URL: [Click Here](https://mohamedate.github.io/ntf_card_challenge/)
+- Solution URL:[Click Here](https://github.com/Mohamedate/age-calculator)
+- Live Site URL: [Click Here](https://mohamedate.github.io/age-calculator/)
 
 ### Built with
 
@@ -16,7 +16,7 @@
 - CSS custom properties
 - Flexbox
 - CSS Grid
-
+- JavaScript Functionallity
 
 
 ## Author
